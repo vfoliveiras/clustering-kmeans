@@ -22,6 +22,12 @@ Foram testados vários números de clusters para encontrar a melhor configuraç�
 
 A métrica **Calinski-Harabasz** foi utilizada para avaliar a qualidade dos clusters gerados pelo **K-Means**. Essa métrica mede a relação entre a dispersão dentro dos clusters e a dispersão entre os clusters. Quanto maior o valor do índice **Calinski-Harabasz**, melhor é a separação entre os clusters.
 
+![screen](https://uploaddeimagens.com.br/images/004/594/721/full/Captura_de_tela_2023-08-31_222819.png?1693531741)
+
+A lógica por trás dessa fórmula é comparar a variação média entre os clusters (dispersão entre clusters) com a variação média dentro dos clusters (dispersão dentro dos clusters). Quando os clusters estão bem separados, a dispersão **entre** eles é maior em relação à dispersão **dentro** deles, resultando em um índice mais alto.
+
+Portanto, ao calcular o índice **Calinski-Harabasz** para diferentes números de clusters, podemos identificar o número de clusters que maximiza essa relação, indicando uma clusterização mais robusta e distinta. Isso ajuda a escolher o número de clusters que melhor se ajusta aos padrões dos dados.
+
 #### • Identificação do Melhor Número de Clusters
 
 Através da avaliação do índice **Calinski-Harabasz** para diferentes números de clusters, foi possível identificar o número de clusters que resultou em uma melhor separação dos dados. A seleção do melhor número de clusters foi baseada na observação dos resultados do índice e na análise das características dos dados.
